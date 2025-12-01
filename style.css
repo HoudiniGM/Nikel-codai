@@ -1,0 +1,18 @@
+legend {
+    font-size: .5rem;
+}
+
+a {
+    color: #4D0071!important;
+    text-decoration: none!important;
+    font-weight: bold!important;
+}
+
+button {
+    background-color: #4D0071!important;
+    width: 40%;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(79, 122, 216) 46.9%, white 47%) no-repeat fixed;
+}
