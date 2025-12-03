@@ -1,0 +1,32 @@
+main {
+    background: linear-gradient(120deg, white 46.9%, #4f7ad8 47%) no-repeat fixed;
+}
+
+#btn-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4D0071;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+.valor-total {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 100px 0;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 24px;
+}

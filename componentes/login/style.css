@@ -9,10 +9,10 @@ a {
 }
 
 button {
-    background-color: #4D0071!important;
+    background-color: #4D0071;
     width: 40%;
 }
 
 body {
-    background: linear-gradient(120deg, rgb(79, 122, 216) 46.9%, white 47%) no-repeat fixed;
+    background: linear-gradient(120deg, #4f7ad8 46.9%, white 47%) no-repeat fixed;
 }

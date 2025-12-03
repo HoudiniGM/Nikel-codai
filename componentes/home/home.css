@@ -1,0 +1,43 @@
+main {
+    background: linear-gradient(120deg, white 46.9%, #4f7ad8 47%) no-repeat fixed;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 100px 0;
+    table-layout: fixed;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.valor-dado, .valor-total {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+button {
+    background-color: #4D0071;
+
+}
+
+#btn-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4D0071;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+
+.corpo {
+    height: 400px;
+    overflow: auto;
+}
