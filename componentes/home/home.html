@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body class="vh-100 vw-100 d-flex flex-column overflow-hidden">
+    <header class="w-100 d-flex justify-content-between align-items-center py-2 px-5 border-bottom">
+        <img src="../../images/nikel-small-logo.png" alt="logo nikel">
+        <div class="d-flex gap-5 fs-3">
+            <a href="../home/home.html">🏠</a>
+            <a href="../transactions/transactions.html">🪙</a>
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="logoutDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    👦
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="logoutDropdown">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a id="logout-link" class="dropdown-item text-danger" href="../login/index.html">Deslogar</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-100 flex-grow-1 px-5">
+        <div class="d-flex w-100 py-4 justify-content-between align-items-center">
+            <div class="d-flex gap-2 valor-total">
+                <p>💵</p>
+                <p>R$ 3788.20</p>
+            </div>
+
+            <img src="../../images/coins-small.png" alt="coins">
+        </div>
+
+        <div class="py-3 bg-white shadow rounded-3 corpo">
+            <table class="w-100">
+                <thead class="border-bottom border-2 border-dark">
+                    <tr>
+                        <th>Entradas ⬇️</th>
+                        <th>Saídas ⬆️</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="entradas align-top">
+                        </td>
+                        <td class="saidas align-top">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><button class="btn btn-primary">Ver todas</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <div class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicione uma transação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="valor" class="form-label">Valor</label>
+                            <input type="valor" class="form-control" id="valor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <input type="text" class="form-control" id="descricao">
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Data</label>
+                            <input type="date" class="form-control" id="data">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipo" class="form-label">Tipo</label>
+                            <select class="form-select" id="tipo">
+                                <option value="entrada">Entrada</option>
+                                <option value="saida">Saída</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="add-transaction-btn" type="button" class="btn btn-primary">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="btn-flutuante" class="btn" data-bs-toggle="modal" data-bs-target=".modal">➕</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
